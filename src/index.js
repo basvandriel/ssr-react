@@ -3,4 +3,5 @@ import { hydrate } from 'react-dom';
 
 import App from './App';
 
-hydrate(<StrictMode><App /></StrictMode>, document.getElementById('root'));
+
+hydrate(<StrictMode><App /></StrictMode>, document.querySelector('div[data-reactroot]'));
